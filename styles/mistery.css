@@ -1,4 +1,4 @@
-section.mistery{
+section.mistery{ 
   & > div{
     height: 400px;
     /* border: 1px red solid; */
@@ -10,9 +10,17 @@ section.mistery{
     overflow: hidden;
     margin-block: 96px 80px;
 
-    
-   &:hover > img{
-    animation: mistery 2s ease;
+   
+   &:hover > .img-1{
+    animation: img-1 3s cubic-bezier(0.19, 1, 0.22, 1) both;
+  
+   }
+   &:hover > .img-2{
+    animation: img-2 3s both;
+  
+   }
+   &:hover > .img-3{
+    animation: img-3 3s both;
   
    }
     
@@ -35,8 +43,6 @@ section.mistery{
       width: 80px;
       height: 80px;
      
-      
-      
       transition: transform 150ms linear, scale 150ms linear;
    
     }
@@ -45,8 +51,6 @@ section.mistery{
       top: 10%;
       transform: rotate(20deg);
       
-      
-
       &:hover{
         
         scale: 1.1;
@@ -79,10 +83,48 @@ section.mistery{
   }
 }
 
-@keyframes mistery{
-  to {
-  opacity: 1;
+@keyframes img-1{
+  0% {
+  opacity: 0;
+  }
+  15%{
+    opacity: 0;
+  }
+  35%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
   
+}
+@keyframes img-2{
+  0% {
+  opacity: 0;
+  }
+  28%{
+    opacity: 0;
+  }
+  45%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
+@keyframes img-3{
+  0% {
+  opacity: 0;
+  }
+  48%{
+    opacity: 0;
+  }
+  65%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
   
 }
